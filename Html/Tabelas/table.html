@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML - Tabelas</title>
+  
+  <style>
+    
+    body {
+      margin: 20px;
+      background-color: #070;
+    }
+    
+    div {
+      background-color: #090;
+      padding: 5px;
+      display: inline-block;
+    }
+    
+    .listas {
+      padding-left: 5px;
+      padding-right: 25px;
+    }
+    
+    h1 {
+      background-color: #090;
+      padding: 5px;
+      display: inline;
+    }
+    
+    th, td, .thtd {
+      padding: 5px;
+    }
+    
+    th {
+      background-color: #070;
+    }
+    
+    #tab, #tab2, .thtd {
+      border: solid black;
+    }
+    
+    #end, #rs5 {
+      text-align: center;
+    }
+    
+  </style>
+  
+</head>
+
+
+
+<body>
+  <h1>Tabelas?</h1>
+  <p>Haha, quem diria. Sim, <b>tabelas</b> meu querido.</p>
+  <p>É possível fazer tabelas em HTML e é bem simples, na real. Basta aprender as tags:</p>
+  
+  <div class="listas">
+    <ul>
+      <li>Tag <code>(table)</code> abre uma tabela.</li><br>
+ 
+      <p>Daí temos:</p>
+
+      <li>Tag <code>(tr)</code> add uma linha.</li>
+      <li>Tag <code>(th)</code> marca um header na tabela, ou seja, a célula fica <em>centralizada</em> e em <b>negrito</b>.</li>
+      <li>Tag <code>(td)</code> add uma célula à linha. Coloque essa tag dentro de <em>(tr)</em>.</li>
+    </ul>
+  </div>
+  <br><br>
+  <p>Bora criar uma aqui:</p>
+  
+  <div>
+  <table>
+    <tr>
+      <th>Segunda</th>
+      <th>Terça</th>
+      <th>Quarta</th>
+      <th>Quinta</th>
+      <th>Sexta</th>
+    </tr>
+    
+    <tr>
+      <td>Merda</td>
+      <td>Ruim</td>
+      <td>Sla</td>
+      <td>Ok</td>
+      <td>Pica</td>
+    </tr>
+  </table>
+  </div>
+  
+  <br><br>
+  <p>Coloca umas borda pra virar uma tabela de verdade.</p>
+  
+  <div>
+  <table id="tab">
+    <thead>
+      <tr>
+        <th class="thtd">Segunda</th>
+        <th class="thtd">Terça</th>
+        <th class="thtd">Quarta</th>
+        <th class="thtd">Quinta</th>
+        <th class="thtd">Sexta</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td class="thtd">Merda</td>
+        <td class="thtd">Ruim</td>
+        <td class="thtd">Sla</td>
+        <td class="thtd">Ok</td>
+        <td class="thtd">Pica</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
+  <br><br>
+  <p>Além disso, deixa tudo dentro desses aqui ó:</p>
+  
+  <div class="listas">
+  <ol type="I">
+    <li><code>thead</code></li>
+    <li><code>tbody</code></li>
+    <li><code>tfoot</code></li>
+  </ol>
+  </div>
+  
+  <p>São semânticos que marcam cada parte da tabela, muito bons.</p><br>
+  <p>Mas não acabou ainda kkkkks tem uns atributin daora, se liga:</p>
+  
+  <div class="listas">
+  <ul type="circle">
+    <li><code>rowspan=""</code> pra fazer a célula cobrir mais linhas abaixo dela.</li>
+    <li><code>colspan=""</code> pra fazer a célula cobrir mais colunas à sua frente.</li>
+  </ul>
+  </div>
+  
+  <br><br>
+  <p>Bora testar:</p>
+  
+  <div>
+  <table id="tab2">
+    
+    <thead>
+      <tr>
+        <th class="thtd">Segunda</th>
+        <th class="thtd">Terça</th>
+        <th class="thtd">Quarta</th>
+        <th class="thtd">Quinta</th>
+        <th class="thtd">Sexta</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td class="thtd">Merda</td>
+        <td class="thtd">Ruim</td>
+        <td class="thtd">Sla</td>
+        <td class="thtd">Ok</td>
+        <td class="thtd">Pica</td>
+      </tr>
+    </tbody>
+    
+    <tfoot>
+      <tr>
+        <td id="rs5" colspan="5">Semana é tipo isso aqui</td>
+      </tr>
+    </tfoot>
+    
+  </table>
+  </div>
+  
+  <br><br><hr>
+  
+  <footer>
+    <p id="end">Coisa linda né? GG easy KSKSKS</p>
+  </footer>
+  
+</body>
+
+</html>

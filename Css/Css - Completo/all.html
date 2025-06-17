@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tudo sobre CSS</title>
+  
+  <link href="all.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <header class="block">
+    <h1>Bora aprender como usar o CSS?</h1>
+  </header>
+  
+  <nav class="block" name="nav">
+    <h2 id="at">Atalhos</h2>
+    
+    <ul>
+      <li><a href="#texto">∆ Texto</a></li>
+      <li><a href="#links">∆ Links</a></li>
+      <li><a href="#local">∆ Localizadores</a></li>
+      <li><a href="#pos">∆ Posição</a></li>
+      <li><a href="#flow">∆ Overflow</a></li>
+      <li><a href="#float">∆ Float & Clear</a></li>
+    </ul>
+  </nav>
+  
+  <main class="block">
+    <h2>Css</h2><br>
+    
+    <section class="blocks" name="all text">
+      <h3 class="title" id="texto">∆ Texto</h3>
+      
+      <code>
+        <ul>
+          
+          <li class="code">text-align: ;</li>
+            <ul>
+              <li>alinhamento horizontal do texto</li>
+              <ul>
+                <li>center</li>
+                <li>left</li>
+                <li>right</li>
+                <li>justify</li>
+              </ul>
+            </ul><br>
+          
+          <li class="code">vertical-align: ;</li>
+            <ul>
+              <li>alinhamento vertical do texto</li>
+              <ul>
+                <li>baseline</li>
+                <li>text-top</li>
+                <li>text-bottom</li>
+                <li>sub</li>
+                <li>super</li>
+              </ul>
+            </ul><br><br>
+            
+            
+        <div name="txtdec" class="group">
+          <ul class="grouplist">
+            <li class="code" type="disc">text-decoration: ;</li>
+              <ul><li type="circle">shorthand para:</li></ul><br>
+              
+              <div class="groupblock">
+                <ol>
+                  <p class="code">text-decoration-line: ;</p>
+                  <ul>
+                    <li type="circle">adiciona uma linha no próprio texto</li>
+                      <ul>
+                        <li>overline</li>
+                        <li>line-through</li>
+                        <li>underline</li>
+                        <li>overline underline</li>
+                      </ul>
+                  </ul><br>
+                  
+                  <p class="code">text-decoration-color: ;</p>
+                    <ul>
+                      <li type="circle">muda a cor da linha do próprio texto</li>
+                      <ul>
+                        <li>cor predefinida</li>
+                        <li>RGB HSL HEX</li>
+                      </ul>
+                    </ul>
+                </ol>    
+              </div>  
+              
+          </ul>   
+        </div><br><br>
+        
+        
+            <li class="code">text-transform: ;</li>
+              <ul>
+                <li>maiúsculo, minúsculo e capitalizado</li>
+                <ul>
+                  <li>uppercase</li>
+                  <li>lowercase</li>
+                  <li>capitalize</li>
+                </ul>
+              </ul><br>
+              
+            <li class="code">text-indent: ;</li>
+              <ul>
+                <li>aumenta o tamanho da indentação</li>
+                <ul>
+                  <li>px</li>
+                </ul>
+              </ul><br>
+              
+            <li class="code">letter-spacing: ;</li>
+              <ul>
+                <li>espaçamento entre letras</li>
+                <ul>
+                  <li>Z (números inteiros)</li>
+                  <li>1.0, 1.8, 0.7, etc</li>
+                </ul>
+              </ul><br>
+              
+            <li class="code">word-spacing: ;</li>
+              <ul>
+                <li>espaço entre palavras</li>
+                  <ul>
+                    <li>px</li>
+                  </ul>
+              </ul><br>
+              
+            <li class="code">line-height: ;</li>
+              <ul>
+                <li>espaçamento entre linhas</li>
+                <ul>
+                  <li>px</li>
+                </ul>
+              </ul><br>
+              
+            <li class="code">white-space: ;</li>
+              <ul>
+                <li>define se o texto vai continuar sempre na mesma linha ou vai quebrar em várias cabíveis</li>
+                  <ul>
+                    <li>"nowrap;" para nunca quebrar linhas</li>
+                  </ul>
+              </ul><br>
+              
+            <li class="code">text-shadow: ;</li>
+              <ul>
+                <li>aplica sombra ao texto</li>
+                <li>px, valores de cores</li>
+                  <ul>
+                    <li>1° px -> sombra horizontal</li>
+                    <li>2° px -> sombra vertical</li>
+                    <li>3° px -> efeito de blur</li>
+                    <li>cor -> cor da sombra</li>
+                      <ul><li>"1px 2px 5px red;"</li></ul>
+                  </ul>
+              </ul><br>
+        
+        </ul>
+      </code>
+      
+    </section>
+    
+    <section class="blocks" name="all links">
+      <h3 class="title first" id="links">∆ Links</h3>
+      
+      <code>
+        <ol type="I">
+          <li class="code, seletor">a:link {}</li>
+            <dl><dd>seletor do link inerte</dd></dl><br>
+          
+          <li class="code, seletor">a:visited {}</li>
+            <dl><dd>seletor do link que já foi visitado alguma vez</dd></dl><br>
+            
+          <li class="code, seletor">a:hover {}</li>
+            <dl><dd>seletor do link enquanto o mouse está sobre ele</dd></dl><br>
+            
+          <li class="code, seletor">a:active {}</li>
+            <dl><dd>seletor do link quando é clicado</dd></dl><br>
+        </ol>
+        
+        
+        
+        
+        <ul name="properties">
+          <li class="code">color: ;</li>
+            <ul>
+              <li>muda a cor do link</li>
+            </ul><br>
+            
+          <p class="code">Quaisquer outras propriedades decorativas, altere entre os tipos de seletores</p>
+            <ul>
+              <li>backgrounds e cores</li>
+              <li>comportamentos de posição</li>
+              <li>sombra e efeitos</li>
+              <li>etc</li>
+            </ul><br>
+            
+        </ul>
+      </code>
+      
+    </section>
+    
+    <section class="blocks" name="all locators">
+      <h3 class="title first" id="local">∆ Localizadores</h3>
+      
+      <code>
+        <ul>
+          <li class="attribute">class=" "</li>
+          <dl><dd>atributo que infere um valor universal que pode ser usado em <b>qualquer</b> e <b>mais de um</b> elemento como parâmetro para ser/serem modificado(s) no Css</dd></dl><br>
+        
+          <li class="attribute">id=" "</li>
+            <dl><dd>atributo que define um valor exclusivo a um elemento como um parâmetro que pode ser usado para modificações no Css</dd></dl><br>
+            
+        </ul>
+      </code>
+      
+    </section>
+    
+    <section class="blocks" name="all positions">
+      <h3 class="title" id="pos">∆ Posição</h3>
+      
+      <code>
+        <ul>
+          <li class="code">position: ;</li>
+            <ul>
+              <li>tag com 1 valor definido, altera a posição do elemento</li><br>
+              
+                <ul>
+                  <li>static; <i>(padrão)</i></li>
+                  <ul>
+                    <li>o elemento possui sua posição natural padrão </li>
+                  </ul><br>
+                
+                  <li>relative;</li>
+                    <ul>
+                      <li>o elemento se posiciona por valores em relação a ele mesmo</li>                  </ul><br>
+                    
+                  <li>absolute;</li>
+                    <ul>
+                      <li>um elemento com <i>absolute</i>, quando está <b>dentro de outro elemento</b>, sempre seguirá a posição deste elemento</li>
+                    </ul><br>
+                    
+                  <li>fixed;</li>
+                    <ul>
+                      <li>o elemento está absolutamente fixo à sua posição na página e nunca mudará dela</li>
+                    </ul><br>
+                    
+                  <li>sticky;</li>
+                    <ul>
+                      <li>o elemento mantém sua posição até o momento em que estiver prestes à sair da tela, mas fica grudado nela, em sua borda </li>
+                    </ul>
+                  
+                </ul>
+            </ul><br><br>
+            
+            
+          
+          <li class="code">top: ;</li>
+            <ul>
+              <li>muda a posição superior</li>
+                <ul>
+                  <li>px</li>
+                </ul>
+            </ul><br>
+           
+          <li class="code">left: ;</li>
+            <ul>
+              <li>muda a posição esquerda</li>
+                <ul>
+                  <li>px</li>
+                </ul>
+            </ul><br>
+        
+        <li class="code">bottom: ;</li>
+          <ul>
+            <li>muda a posição inferior</li>
+            <ul>
+              <li>px</li>
+            </ul>
+          </ul><br>
+          
+        <li class="code">right: ;</li>
+          <ul>
+            <li>muda a posição direita</li>
+            <ul>
+              <li>px</li>
+            </ul>
+          </ul><br>
+        
+        </ul>
+      </code>
+      
+      
+    </section>
+    
+    <section class="blocks" name="all overflows">
+      <h3 class="title" id="flow">∆ Overflow/"Estouro" do conteúdo</h3>
+      
+      <code>
+        <ul>
+          <li class="code">overflow: ;</li>
+            <ul>
+              <li>controla se o conteúdo vai respeitar o espaço ou estourá-lo</li></ul><br>
+          
+          <ul type="square">
+            <li>visible <em>(padrão)</em></li>
+              <ul>
+                <li>o conteúdo continuará seu seguimento mesmo após estourar o espaço da página ou do elemento em que está</li>
+              </ul><br>
+            
+            <li>hidden</li>
+              <ul>
+                <li>o conteúdo literalmente sofrerá um corte na sua extremidade estourada para caber no espaço</li>
+              </ul><br>
+              
+            <li>scroll</li>
+              <ul>
+                <li>serão obrigatoriamente adicionados 2 scrolls móveis para o elemento estourado</li>
+              </ul><br>
+              
+            <li>auto</li>
+              <ul>
+                <li>add apenas o(s) scroll(s) necessário(s) ao elemento estourado</li>
+              </ul>
+            
+          </ul>
+          
+        </ul>
+      </code><br>
+      
+    </section>
+    
+    <section class="blocks" name="all floats">
+      <h3 class="title" id="float">∆ Float & Clear</h3>
+      <code>
+        <ul>
+          <li class="code">float: ;</li>
+            <ul>
+              <li>usado para colocar elementos <b>ao lado</b> de outros e puxá-los, normalmente para colocar uma imagem a um lado qualquer de um texto</li>
+              
+                <ul>
+                  <li>left</li>
+                  <li>right</li>
+                  <li>none</li>
+                  <li>inherit</li>
+                </ul>
+            </ul><br>
+            
+          <li class="code">clear: ;</li>
+            <ul>
+              <li>controla o que acontece com os elementos ao lado dos com <em>float</em></li>
+                <ul>
+                  <li>none <em>(padrão)</em></li>
+                    <ul>
+                      <li>segue o elemento <em>float</em></li>
+                    </ul><br>
+                    
+                  <li>left</li>
+                    <ul>
+                      <li>se posiciona <b>embaixo-esquerda</b> do elemento <em>float</em></li>
+                    </ul><br>
+                    
+                  <li>right</li>
+                    <ul>
+                      <li>se posiciona <b>embaixo-direita</b> do elemento <em>float</em></li>
+                    </ul><br>
+                    
+                  <li>both</li>
+                    <ul>
+                      <li>se posiciona <b>embaixo-esquerda/direita</b> do elemento <em>float</em>, se centralizando aos dois</li>
+                    </ul><br>
+                  
+                  <li>inherit</li>  
+                    <ul>
+                      <li>se posiciona seguindo o elemento pai</li>
+                    </ul><br>
+                    
+                </ul>
+            </ul>
+            
+        </ul>
+      </code>
+      
+    </section>
+  </main>
+  
+</body>
+
+</html>

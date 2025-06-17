@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Positions</title>
+  
+  <link href="posição.css" rel="stylesheet">
+</head>
+
+<body bgcolor="#331170">
+  
+  <header>
+    <h1>Posições?</h1>
+  
+    <p>Pois é, vamo ver se a gente aprende a posiciar do jeito certo algumas coisas aí.</p>
+  </header>
+  <hr>
+  
+  <main>
+    <h3>Vamo usar esse quadrado aqui:</h3>
+    
+    <br>
+    <div class="square" id="one"></div>
+    <br>
+    
+    <p>Esse quadrado vai ser nossa base de estudo, haha. Pelo que cê pode vê, ele tá bem normal, com a posição definida para a esquerda da tela. Por padrão, ele está com <code>position="static"</code>.</p>
+    <p>Mas, agora, vamo tentar centralizar ele, utilizando a nossa querida <code>margin="auto"</code>, que sempre tá aí em nossas mãos.</p>
+ 
+    <br>
+    <div class="square" id="two"></div>
+    <br>
+  
+  <p>Certo. Em relação a essa posição, vamo chegar ele 50 pixels para a esquerda, utilizando a definição <code>position="relative"</code>, juntamente da propriedade <code>right=" "</code> seguida desta.</p>
+  <p>Mas não deveria ser "<i>left"</i>?<br> Não, pois os valores colocados nas direções da posição relativa fazem com que sejam <b>adicionados mais pixels nelas</b>, aumentando o espaço entre o conteúdo e "empurrando" o item para a outra direção.</p>
+  
+  <br>
+  <div class="square" id="three"></div>
+  <br>
+  
+  <blockquote style="text-align: justify">Se o quadrado estivesse dentro de um elemento e possuísse a definição de <code>position="absolute"</code>, ele se moveria relativo a este. Caso tivesse essa definição, mas sem um elemento pai, ele usaria o próprio documento como parâmetro.</blockquote>
+  
+  <br>
+  <fieldset>
+    <p style="margin: 5px 5px;">∆ Você notou um pequeno quadrado at the top right corner of the screen? Ele está com a definição <code>position="fixed"</code> e não sairá de lá nunca.</p>
+  </fieldset>
+  <br>
+  
+  <!-- Fixed Square -->
+  <div class="square" id="four"></div>
+  <!-- Fixed Square -->
+  <br>
+  
+  <article>
+    <h3 style="margin-top: 15px;">Sticky</h3>
+      
+    <p>O <code>position="sticky"</code> faz o conteúdo "grudar" em alguma extremidade após chegar nela.</p>
+    
+    <p>Vamos fazer um teste! <u>Deslize</u> para baixo!</p>
+    
+    <div class="sticky">
+      <p>Este texto grudará lá em cima!</p>
+    </div>
+    
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    
+    <p>Como você pode ver, o bloco verde de texto <b>GRUDOU</b> na extremidade superior deste bloco.</p>
+    
+    <p>Pra decidir a direção que ele ficará grudado, escolha entre <code>top:;</code> , <code>right:;</code> , <code>bottom:;</code> ou <code>left:;</code> e defina o valor para zero.</p>
+    
+    <p>Você pode pensar nisso como se a direção escolhida tivesse <b>resistência = 0</b> para "segurar" o <i>sticky</i>.</p>
+  </article>
+  
+ </main>
+</body>
+
+</html>

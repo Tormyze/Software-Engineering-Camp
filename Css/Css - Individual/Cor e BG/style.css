@@ -1,0 +1,26 @@
+html {
+  background-color: #555;
+}
+
+body {
+  color: #bbb;
+  background-color: #222;
+  background-image: url(Img/sky.jpg);
+  background-attachment: fixed;
+  margin: 30px;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+img {
+  width: 80%;
+  border: solid;
+  height: auto;
+  margin: 15px auto 15px auto;
+  display: flex;
+  
+}
+
+p {
+  text-align: justify;
+}

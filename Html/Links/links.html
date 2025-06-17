@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Html - Links</title>
+  
+  <style>
+    
+    html {
+      color: darkgray;
+    }
+    
+    body {
+      background-color: black;
+      margin: 0 20px 0 20px;
+    }
+    
+    h1, p {
+      text-align: center;
+    }
+    
+    fieldset {
+      text-align: center;
+      width: 70%;
+      margin: auto;
+    }
+    
+    .tutubes {
+      text-align: center;
+      border: solid darkgray;
+      border-radius: 15px;
+      width: 28%;
+      padding: 2px 0 2px 0;
+      margin: auto;
+    }
+    
+    #ytImg {
+      width: 18px;
+      height: 18px;
+    }
+    
+    a:link {
+      color: darkgray;
+    }
+    
+    /* New Doc */
+    
+    .rel {
+      border: solid;
+      padding: 2px;
+      margin-left: 5px;
+    }
+    
+    /* New Doc */
+    
+  </style>
+  
+</head>
+
+
+
+<body>
+  <h1>Links também?</h1>
+  <p>Isso mesmo, meu garoto. Tu pode, claro né, adicionar uns links por aí, do que tu quiser. Se liga:</p>
+  <br>
+  
+  <article class="explain">
+    <fieldset>
+      
+         <p><b>1.</b> Primeiro, cê vai precisar usar a tag <code>(a)</code> pra fluir tudo já do melhor jeito.</p><br>
+         <p><b>2.</b> Daí depois cê usa o atributo <code>(href="")</code> pra colocar teu link propriamente dito.</p>
+      <br>
+    </fieldset>
+  </article><br>
+  
+  <p style="text-align: left;">A sintaxe é assim ó:</p>
+    
+  <div style="text-align: center;"><code>(a href=" ") (/a)</code></div>
+  <br><hr>
+  
+  <p>Vamo dá um exemplo com nosso querido Tutubes, blz? Saca só, teu canal:</p>
+  
+  <div class="tutubes">
+    <a href="https://youtube.com/@tormyze?si=zani1JvBKXBTWOum"><img src="Imgs/youtube.png" alt="Youtube" id="ytImg"> <span>Tormyze</span>
+    </a>
+  </div>
+  
+  <p>Aqui a gente usou o caminho absoluto, ou seja, colocamos a URL da página em <code>href=" "</code>.</p><hr><br>
+  
+  <p style="text-align: left;">Agora vamo pelo caminho relativo, que leva nós pra outro documento. Se liga só:</p>
+  
+  <p style="display: inline;">--></p>
+  <span class="rel">
+    <a href="path.html">New Doc</a>
+  </span>
+  <br><br><br>
+  <p>Interessante, né? Sim, interessante e funcional, perfeito pra o que foram feitos pra ser. Links são bons.</p>
+  
+  
+</body>
+
+</html>

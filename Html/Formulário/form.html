@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Html - Formulário</title>
+  
+  <style>
+    
+    html {
+      background-color: #000;
+    }
+    
+    body {
+      padding: 20px 40px 20px 40px;
+      margin: 30px;
+      background-color: #383838;
+      color: #fafafa;
+      border-radius: 30px;
+    }
+    
+    p {
+      text-align: justify;
+    }
+    
+    .red {
+      color: #f22;
+    }
+    
+    .yellow {
+      color: #f2f200;
+    }
+    
+    .code {
+      border: solid;
+      padding: 5px;
+    }
+    
+    code {
+      background-color: #242424;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>Formulário?</h1>
+  
+  <main>
+    <p>Bom, claro né. Vamo falar de uma das estruturas funcionais que o Html nos permite criar: <b>o formulário.</b></p>
+    
+    <p>Para criar um formulário (semântico <span class="red"><code>form</code></span>) devemos fazer a seguinte estrutura básica:</p>
+    
+    <br>
+    <div class="code">
+      <code>
+        (form <span class="yellow">action="" method=""</span>)
+        <br><br><br>
+        
+        
+        (/form)
+      </code><br><br><br>
+      
+      <p>* <span class="yellow"><code>action=""</code></span> descreve para onde os dados serão enviados.</p>
+      
+      <p>* <span class="yellow"><code>method=""</code></span> descreve se os dados serão codificados e como serão para serem enviados.</p>
+      
+    </div>
+    <br>
+    
+    <p>Ele nos permite criar diversos tipos de entradas onde os usuários podem nos enviar dados ou à algum local.</p>
+    
+    <p>Vamos ver quais são elas!</p>
+    
+  </main><br>
+  
+  <form>
+    <fieldset>
+      <legend>Os inputs!</legend>
+      <br>
+      
+      Texto <input type="text" name="text" value="Nome"><br><br>
+      
+      Senha <input type="password" name="senha" value="12345678"><br><br>
+      
+      Email <input type="email" name="email" value="sla@gmail.com"><br><br>
+      
+      Telefone <input type="tel" name="tel" value="01 1234-5432"><br><br>
+      
+      <input type="button" name="button" value="Botão"><br><br>
+      
+      Cor <input type="color" name="color"><br><br>
+      
+      Range <input type="range" name="range"><br><br>
+      
+      Checkbox <input type="checkbox" name="checkbox"> <input type="checkbox" name="checkbox"> <input type="checkbox" name="checkbox"><br><br>
+      
+      Radio Buttons <label><input type="radio" name="radio">Sim</label><label><input type="radio" name="radio">Não</label><br><br>
+      
+      Número <input type="number" name="número" value="5"><br><br>
+      
+      Data <input type="date" name="data" value="2025-01-01"><br><br>
+      
+      Hora <input type="time" name="hora" value="12:00"><br><br>
+      
+      Data e hora <input type="datetime-local" name="datetime" value="2025-01-01T12:00"><br><br>
+      
+      Mês <input type="month" name="mês" value="2025-01"><br><br>
+      
+      Semana <input type="week" name="semana" value="2025-W05"><br><br>
+    
+      URL <input type="url" name="url" value="https://google.com.br"><br><br>
+      
+      Arquivo <input type="file"name="arquivo"><br><br>
+      
+      Imagem <input type="image" name="imagem" src="Imagem/But.jpg" alt="But" width="50px"><br><br>
+      
+      <p>Hidden</p> <input type="hidden" name="hidden" value="Secreto"><br>
+      
+      Search <input type="search" name="Pesquisa"><br><br>
+      
+      Reset Button <input type="reset" name="reset" value="Reset"><br><br>
+      
+      Submit Button <input type="submit" name="submit" value="Submit"><br>
+      
+      <br>
+    </fieldset>
+  </form>
+  <br>
+  
+  <p>* há vários atributos para os inputs mas <b>sempre</b> coloque o <span class="red"><code>name=" "</code></span> para referenciar os pares de dados na hora do envio e outros processos.</p>
+  
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML - Cores</title>
+  
+  <style>
+    body {
+      margin: 0 35px 0 35px;
+    }
+  </style>
+  
+</head>
+
+<body bgcolor="burlywood">
+  <h1>Cores?</h1>
+  <p>Pois é, meu amigão, você também consegue usar umas cores pelo código, da maneira que quiser. Dá uma olhada:</p>
+  <br>
+  <hr>
+  
+  <h2>Atributos de cor</h2>
+  <p>Você pode adicionar um atributo de cor com seu devido valor para alterar a coloração de uma propriedade ou item.</p>
+  
+  <p>Exemplo:</p>
+  
+  <ul>
+    <li>Utilizando o atributo <strong><em>bgcolor=" "</em></strong> em body, pra mudar o background.</li>
+  </ul>
+  
+  <hr>
+  <h2>Atributo <em>style=" "</em></h2>
+  <p>É possível simular o CSS em um item através de um atributo chamado STYLE. Coloque ele dentro do elemento e, em seguida, adicione uma propriedade nas aspas " " com algum valor de cor.</p>
+  
+  <p>Exemplo:</p>
+  
+  <ul>
+    <li style="color: red">Cor vermelha</li>
+  </ul>
+  
+  
+  <hr>
+  <h2>Sistema RGB</h2>
+  <p>No caso, RGB é o sistema de cores com RED, GREEN e BLUE. Cada uma possui nível de intensidade do 0 ao 255. Misturando, chegamos em várias cores diferentes.</p>
+  
+  <p>Exemplo:</p>
+  
+  <ul>
+    <li style="color: rgb(255, 0, 0);">Vermelho</li>
+    <li style="color: rgb(0, 255, 0);">Verde</li>
+    <li style="color: rgb(0, 0, 255);">Azul</li><br>
+    
+    <li style="color: rgb(255, 255, 0);">Amarelo</li>
+    <li style="color: rgb(255, 0, 255);">Magenta</li>
+    <li style="color: rgb(0, 255, 255);">Ciano</li><br>
+    
+    <li style="color: rgb(0, 0, 0);">Preto</li>
+    <li style="color: rgb(128, 128, 128);">Cinza</li>
+    <li style="color: rgb(255, 255, 255);">Branco</li>
+  </ul>
+  
+  <hr>
+  <h2>Sistema HEX</h2>
+  <p>Há também o sistema hexadecimal de cores, chamado de HEX. Ele utiliza os caracteres de <em>0 - 9</em> e <em>A - F</em> como pares de valores de intensidade de cada cor. Bora explicar melhor:</p>
+  
+  <dl>
+    <dt>
+      <div style="text-align: center; display: flex;">
+        <p style="color: rgb(0, 0, 0);">#</p>
+        <p style="color: rgb(255, 0, 0);">RR</p>
+        <p style="color: rgb(0, 255, 0);">GG</p>
+        <p style="color: rgb(0, 0, 255);">BB</p>
+      </div>
+    </dt>
+      <dd>Cada par representa uma cor do RGB.</dd>
+  </dl>
+  
+  <p>A menor intensidade é <em>0</em> e a maior é <em>F</em>. Assim, podemos, por exemplo, criar as seguintes cores:</p>
+  
+  <br>
+  <dl>
+    <dt>
+      <p style="color: #FFFF00">Amarelo HEX</p></dt>
+    <dd>Para o amarelo, combine vermelho puro com verde puro, usando <em>#FFFF00</em>.</dd>
+    
+    <dt>
+      <p style="color: #ff00ff">Magenta HEX</p></dt>
+    <dd>Para o magenta, combine vermelho puro com azul puro, usando <em>#FF00FF</em>.</dd>
+    
+    <dt>
+      <p style="color: #00ffff">Ciano HEX</p></dt>
+    <dd>Para o ciano, combine verde puro com azul puro, usando <em>#00FFFF</em>.</dd>
+    
+    <dt>
+      <p style="color: #888888">Cinza HEX</p></dt>
+    <dd>Para o cinza, coloque a metade da intensidade em cada um dos pares, que no caso é <em>#888888</em>.</dd>
+   </dl><br>
+   
+   <p>Com o sistema hexadecimal é possível misturar variadas cores com forças diferentes, obtendo diversos resultados interessantes.</p><hr>
+  
+  
+  <h2>Sistema HSL</h2>
+  <p>Não menos importante, temos também um sistema chamado HSL (<em>hue, saturation, lightness</em>). Com ele, é possível definir a SATURAÇÃO e a LUMINOSIDADE da cor desejada.</p>
+  
+  <ul>
+    <li>Saturação</li>
+      <ul>
+        <li>Intensidade total da cor.</li>
+          <ul>
+            Vai de cinza até a cor total.
+          </ul>
+      </ul><br>
+    <li>Luminosidade</li>
+      <ul>
+        <li>Brilho da cor.</li>
+          <ul>
+            Vai do preto até o puro branco.
+          </ul>
+      </ul>
+  </ul>
+  
+  
+  <p>Funciona da seguinte forma:</p>
+  <p>O valor de <em>hue</em> é um <strong>ângulo</strong> em uma roda de cores planificada.</p>
+  
+  <ul type="square">
+    <li>0° é vermelho.</li>
+    <li>120° é verde.</li>
+    <li>240° é azul.</li>
+  </ul>
+  
+  <p>Para os valores de <strong>saturação</strong> e <strong>luminosidade</strong> respectivamente, é utilizado a <em>porcentagem (%)</em>.</p>
+  
+  <p>Assim, podemos estruturar um código de HSL dessa forma:</p>
+  
+  <ol>
+    <dl>
+      <dt style="color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</dt>
+        <dd>Essa é a sintaxe!</dd>
+    </dl>
+    
+    <dl>
+      <dt style="color: hsl(30, 75%, 30%);">hsl(30, 75%, 30%)</dt>
+        <dd>Seja criativo, teste os valores.</dd>
+    </dl>
+    
+    <dl>
+      <dt style="color: hsl(120, 100%, 25%);">hsl(120, 100%, 25%)</dt>
+        <dd>Tons escuros e claros. </dd>
+    </dl>
+  </ol><hr>
+  
+  
+</body>
+
+</html>

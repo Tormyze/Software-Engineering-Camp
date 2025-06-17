@@ -1,0 +1,86 @@
+body {
+  color: #ccc;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+code {
+  color: #eaea00;
+}
+
+fieldset {
+  border-radius: 15px;
+}
+
+
+/* Sticky zone */
+article {
+  width: 300px;
+  height: 200px;
+  padding: 0 20px 10px 20px;
+  margin: auto;
+  border: solid 3px #ccc;
+  background-color: #777;
+  overflow: auto;
+}
+
+article p {
+  margin-bottom: 5px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  
+  background-color: #007a00;
+  border: solid 2px #0c0;
+  margin: 0;
+  padding: 2px;
+}
+
+.sticky p {
+  color: #0c0;
+  margin: 5px 0;
+  text-align: center;
+}
+/* Sticky zone */
+
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: solid 3px #ccc;
+}
+
+
+/*Squares*/
+#one {
+  position: static;
+}
+
+#two {
+  position: static;
+  margin: auto;
+}
+
+#three {
+  position: relative;
+  margin: auto;
+  right: 50px;
+}
+
+#four {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  margin: 5px 8px 0 0;
+}
