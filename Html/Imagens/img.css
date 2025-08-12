@@ -2,6 +2,7 @@ body {
   margin: 20px 20px 0 20px;
   background-color: #700505;
   color: #f00;
+  text-shadow: black 0 0 3px;
   text-align: center;
   font-family: 'Helvetica';
 }
@@ -29,6 +30,8 @@ div {
 img {
   width: auto;
   height: 200px;
+  border-radius: 15px;
+  box-shadow: white 0 0 15px;
 }
 
 #end {

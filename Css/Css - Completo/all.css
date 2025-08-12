@@ -1,4 +1,7 @@
-html {background: #404;}
+html {
+  overflow-x: hidden;
+  background: #404;
+}
 
 body {margin: -1px;}
 

@@ -24,6 +24,7 @@
       <li><a href="#texto">∆ Texto</a></li>
       <li><a href="#links">∆ Links</a></li>
       <li><a href="#local">∆ Localizadores</a></li>
+      <li><a href="#est">∆ Estilização</a></li>      
       <li><a href="#pos">∆ Posição</a></li>
       <li><a href="#flow">∆ Overflow</a></li>
       <li><a href="#float">∆ Float & Clear</a></li>
@@ -39,6 +40,44 @@
       <code>
         <ul>
           
+          <li class="code">font-size: ;</li>
+            <ul>
+              <li>altera o tamanho do texto</li>
+                <ul>
+                  <li>px</li>
+                  <li>rem, em</li>
+                  <li>%</li>
+                  <li>etc</li>
+                </ul>
+            </ul><br>
+
+          <li class="code">font-family: ;</li>
+            <ul>
+              <li>altera a fonte do texto</li>
+                <ul>
+                  <li>coloque o nome da fonte entre aspas</li>
+                </ul>
+            </ul><br>
+
+          <li class="code">font-weight: ;</li>
+            <ul>
+              <li>aplica negrito ao texto</li>
+                <ul>
+                  <li>normal</li>
+                  <li>bold</li>
+                  <li>100 até 900</li>
+                </ul>
+            </ul><br>
+
+          <li class="code">font-style: ;</li>
+            <ul>
+              <li>aplica itálico ao texto</li>
+                <ul>
+                  <li>normal</li>
+                  <li>italic</li>
+                </ul>
+            </ul><br>
+
           <li class="code">text-align: ;</li>
             <ul>
               <li>alinhamento horizontal do texto</li>
@@ -220,6 +259,45 @@
       </code>
       
     </section>
+
+    <section class="blocks" name="all estilization">
+      <h3 class="title" id="est">∆ Estilização</h3>
+
+      <code>
+        <ul>
+          <li class="code">box-sizing: ;</li>
+          <ul>
+            <li>alterna o verdadeiro espaço que um elemento ocupa com <b>width</b>, <b>height</b>, <b>paddings</b> e <b>margins</b>.</li>
+            <ul>
+              <li>content-box; <i>(padrão)</i></li>
+                <ul>
+                  <li><b>padding</b> e <b>margin</b> se somam à área total</li>
+                  <li>"width:<i>100</i> + padding:<i>20</i> + margin:<i>10</i> -> área: <i>130</i>"</li>
+                </ul>
+              <li>border-box;</li>
+                <ul>
+                  <li><b>padding</b> e <b>margin</b> fazem parte da área total</li>
+                  <li>"width:<i>100</i> + padding:<i>20</i> + margin:<i>10</i> -> área: <i>100</i>"</li>
+                </ul><br>
+            </ul>
+          </ul>
+
+          <li class="code">box-shadow: ;</li>
+              <ul>
+                <li>aplica sombra ao bloco de conteúdo</li>
+                <li>px, valores de cores</li>
+                  <ul>
+                    <li>1° px -> sombra horizontal</li>
+                    <li>2° px -> sombra vertical</li>
+                    <li>3° px -> efeito de blur</li>
+                    <li>cor -> cor da sombra</li>
+                      <ul><li>"1px 2px 5px blue;"</li></ul>
+                  </ul>
+              </ul><br>
+        </ul>
+      </code>
+
+    </section>
     
     <section class="blocks" name="all positions">
       <h3 class="title" id="pos">∆ Posição</h3>
@@ -294,7 +372,6 @@
         
         </ul>
       </code>
-      
       
     </section>
     
@@ -387,8 +464,7 @@
       </code>
       
     </section>
-  </main>
-  
-</body>
 
+  </main>
+</body>
 </html>
