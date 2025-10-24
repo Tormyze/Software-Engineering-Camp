@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="py.css">
+
+    <style>
+        main {
+            width: 500px;
+            margin: 13vh auto;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .def2 {
+            color: #ffaa01;
+        }
+
+        .bt {
+            color: #00e500;
+        }
+
+        .syntax {
+            list-style: none;
+            text-indent: -15px;
+            margin-bottom: 5px;
+        }
+
+        .actions {
+            margin-left: 2px;
+            border-left: solid 2px #ddd;
+            border-radius: 4px;
+            padding-left: 6px;
+        }
+
+        ul.first {
+            margin-top: -15px;
+        }
+
+        dt.function {
+            margin-top: 5px;
+        }
+
+        dt.function:first-child {
+            margin-top: 0;
+        }
+
+        dd {
+            text-indent: -15px;
+            margin-top: 1px;
+            color: aquamarine;
+        }
+
+        #obs {
+            font-size: 14px;
+            margin: 0 0 15px 0;
+        }
+    </style>
+
+    <title>Libraries!</title>
+</head>
+<body>
+    <main>
+        <nav><a href="py.html">Back</a></nav>
+
+        <h2>Python's Libraries</h2>
+        <hr>
+
+        <p id="obs">* <span class="keyword">from</span> [library] <span class="keyword">import</span> [method], <i>you just need the</i> <span class="function">[method( )]</span> <i>syntax.</i></p>
+
+        <h3>- math</h3>
+        <ul class="first">
+            <li class="def2 bt">built-in</li>
+            <li class="def2">library used to manipulate mathematic resources</li>
+            <br>
+
+            <li class="syntax">math.<span class="function">[method]</span></li>
+
+            <dl class="actions">
+                <dt class="function">ceil( )</dt>
+                <dd>rounds the <i>float</i> number up</dd>
+                <dt class="function">floor( )</dt>
+                <dd>rounds the <i>float</i> number down</dd>
+                <dt class="function">trunc( )</dt>
+                <dd>roughly cuts all the numbers after the . in a <i>float</i> value</dd>
+                <dt class="function">pow( )</dt>
+                <dd>makes exponenciations **</dd>
+                <dt class="function">sqrt( )</dt>
+                <dd>makes square roots **(1/2)</dd>
+                <dt class="function">factorial( )</dt>
+                <dd>makes factorial calculations !</dd>
+                <dt class="function">hypot(x, y)</dt>
+                <dd>calculates the hypotenuse</dd>
+                <dt class="function">sin( )</dt>
+                <dd>calculates the sine of a value</dd>
+                <dt class="function">cos( )</dt>
+                <dd>calculates the cosine of a value</dd>
+                <dt class="function">tan( )</dt>
+                <dd>calculates the tangent of a value</dd>
+                <dt class="function">radians( )</dt>
+                <dd>toggles a value between <u>angle</u> or <u>radian</u></dd>
+            </dl>
+        </ul>
+
+        <hr>
+
+        <h3>- random</h3>
+        <ul class="first">
+            <li class="def bt">built-in</li>
+            <li class="def2">library that chooses a random value</li>
+            <br>
+
+            <li class="syntax">random.<span class="function">[method]</span></li>
+
+            <dl class="actions">
+                <dt class="function">random( )</dt>
+                <dd><i>( )</i> - chooses a number between 0 and 1</dd>
+                <dt class="function">randint( )</dt>
+                <dd><i>(x, y)</i> - chooses a number between any two <i>int</i> numbers</dd>
+                <dt class="function">choice( )</dt>
+                <dd>chooses a value from a list</dd>
+                <dt class="function">shuffle( )</dt>
+                <dd>shuffles the values in a list, and return None</dd>
+            </dl>
+        </ul>
+
+        <hr>
+        <h3>- time</h3>
+        <ul class="first">
+            <li class="def2 bt">built-in</li>
+            <li class="def2">library that manipulates time aspects</li>
+            <br>
+
+            <li class="syntax">time.<span class="function">[method]</span></li>
+
+            <dl class="actions">
+                <dt class="function">sleep( )</dt>
+                <dd><i>(x)</i> - makes the program wait <u>x</u> seconds and, then, continues</dd>
+            </dl>
+        </ul>
+
+        <hr>
+        <h3>- datetime</h3>
+        <ul class="first">
+            <li class="def2 bt">built-in</li>
+            <li class="def2">library that manipulates date</li>
+            <br>
+
+            <li class="syntax">datetime.<span class="function">[method]</span>. <span class="keyword">[sub-method]</span></li>
+
+            <dl class="actions">
+                <dt class="function">date.</dt>
+                <dd><i><span class="keyword">today( )</span><span class="method">.year</span></i> - calls the current year</dd>
+            </dl>
+        </ul>
+    </main>
+</body>
+</html>

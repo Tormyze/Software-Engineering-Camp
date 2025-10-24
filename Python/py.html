@@ -13,41 +13,424 @@
     </header>
 
     <main>
+        <nav><a href="libraries.html">Libraries</a></nav>
+
         <h2>Let's learn some Python</h2>
         <hr>
 
-        <section class="topic">
-            <h3>1. Commands</h3>
+        <section class="topic" id="functions">
+            <h3>1. Functions</h3>
 
             <ul>
-                <li class="command">print( )</li>
+                <li class="function">print( )</li>
                 <ul>
                     <li class="def">shows content</li>
                 </ul>
             </ul>
 
             <ul>
-                <li class="command">input( )</li>
+                <li class="function">del( )</li>
+                <ul>
+                    <li class="def">(any data) - deletes some object forever [var, itr, num, etc...]</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="function">input( )</li>
                 <ul>
                     <li class="def">lets the user type something in</li>
                 </ul>
             </ul>
 
             <ul>
-                <li class="command">type( )</li>
+                <li class="function">type( )</li>
                 <ul>
                     <li class="def">shows the object's type</li>
                 </ul>
             </ul>
+
+            <ul>
+                <li class="function">[ ]</li>
+                <ul>
+                    <li class="def">brackets create a list [x, y, z, ...] (vector)</li>
+                    <li class="def">also are used to call some part of an element</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="function">len( )</li>
+                <ul>
+                    <li class="def">counts an object's lenght and returns it in a numeric value</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="function">range(n1, nn)</li>
+                <ul>
+                    <li class="def">counts from 'n1' to 'nn' sequencially (numbers)</li>
+                    <li class="def"><span class="function">(n1, nn, z)</span> - 'z' defines an increment value (1 by 1, 2 by 2, ...)</li>
+                    <li class="def"><span class="function">(n1, nn, -1)</span> - counts backwards</li>
+                </ul>
+            </ul>
         </section>
 
-        <section class="topic">
+        <section class="topic" id="methods">
             <h3>2. Methods</h3>
 
             <ul>
-                <li class="method">. format( )</li>
+                <li class="method">. format<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">inserts the content inside it into the <span style="color: #db00e3;">{ }</span> position</li>
+                    <li class="def">inserts the content inside it into the <span class="keyword">{ }</span> position</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">var<span class="keyword">[n]</span></li>
+                <ul>
+                    <li class="def">calls an element's position</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. isnumeric<span class="keyword">( )</span> / . isalpha<span class="keyword">( )</span> / . isalnum<span class="keyword">( )</span> / etc...</li>
+                <ul>
+                    <li class="def">returns a boolean value depending on the object's type question</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. max <span class="keyword">( )</span> / . min <span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">returns the biggest or the smallest value from an iterable</li>
+                </ul>
+            </ul>
+            <h5>String</h5>
+
+            <ul>
+                <li class="method">. count<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">('x') - counts how many times a character appears in the <i>str</i></li>
+                    <li class="def">('x', n1, n2) - counts with slicing</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. find<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">('xyz') - indicates the position value of a segment of text</li>
+                    <li class="def">returns -1 [minus one] if doesn't find anything</li>
+                    <li class="def"><span class="method">. rfind</span><span class="keyword">( )</span> starts the process from the RIGHT side</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">[var]. replace<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">('x', 'y') - replaces 'x' <i>str</i> for 'y' <i>str</i> in [var]</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. upper<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">turns all to UPPERCASE</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. lower<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">turns all to lowercase</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. capitalize<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">turns only the first word to Capitalized</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. title<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">turns every single word to Capitalized</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. strip<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">removes all the useless spaces in a string</li>
+                    <li class="def"><span class="method">. rstrip</span><span class="keyword">( )</span> removes the spaces on the right</li>
+                    <li class="def"><span class="method">. lstrip</span><span class="keyword">( )</span> removes the spaces on the left</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. split<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">splits the <i>str</i> in all its spaces, dividing its words individualy</li>
+                    <li class="def">basically creates a list with every word inside it</li>
+                    <li class="def">you can print a word using its list numeric value 'x[n]'</li>
+                    <li class="def">with another value, you print only some character of it 'x[n][m]'</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">'x'. join<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">(var) - puts an 'x' separator between each word and join them together again</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section class="topic" id="data-types">
+            <h3>3. Data Types</h3>
+
+            <ul>
+                <li class="data-type">int<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">changes the object into an <i>int</i> type</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="data-type">float<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">changes the object into a <i>float</i> type</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="data-type">str<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">changes the object into a <i>string</i> type</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section class="topic" id="operators">
+            <h3>4. Operators</h3>
+
+            <ul>
+                <li><span class="op">+</span> | <span class="op">-</span> | <span class="op">*</span> | <span class="op">/</span></li>
+                <ul>
+                    <li class="def">sums, subtracts, times, divides</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li><span class="op">+=</span></li>
+                <ul>
+                    <li class="def">incrementation</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li>var1 <span class="op">=</span> var2 <span class="op">=</span> n</li>
+                <ul>
+                    <li class="def">multi equal</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li>'a' <span class="op">in</span> 'x'</li>
+                <ul>
+                    <li class="def">returns True if 'a' is in 'x'</li>
+                    <li class="def">'aBç' - can check many diferent values (doesn't need space)</li>
+                    <li class="def"><span class="method">'x' <span class="op">in</span> 'a'</span> - the opposite comparation can also be possible if the second element is a container with the same type as the first one</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section class="topic" id="keywords">
+            <h3>5. Keywords</h3>
+
+            <ul>
+                <li class="keyword">import</li>
+                <ul>
+                     <li class="def">used to add some library in your Python environment</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="keyword">from <span class="method">[library]</span> import <span class="method">[item]</span></li>
+                <ul>
+                    <li class="def">add an especific element from some library</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section class="topic" id="structures">
+            <h3>6. Structures</h3>
+
+            <ul>
+                <li class="structure">if elif else :</li>
+                <ul>
+                     <li class="def">used in conditional structures</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="structure">for <span class="method">var</span> in <span class="function">[object]</span> :</li>
+                <ul>
+                     <li class="def">used in loop structures</li>
+                     <li class="def"><span class="function">range(n1, nn)</span> - counts from 'n1' to 'nn' and keeps all the values into 'var'</li>
+                     <li class="def"><span class="method">var1, var2</span> <span class="structure">in</span> <span class="function">enumerate(itr)</span> - calls the objects' positions and their values into each 'var' respectively in each loop</li>
+                </ul>
+            </ul>
+        </section>
+        
+        <section class="topic" id="iterables">
+            <h3>7. Iterables</h3>
+
+            <ul>
+                <li class="method">var <span class="op">=</span> itr1 <span class="op">+</span> itr2</li>
+                <ul>
+                    <li class="def">'var' joins all the values in both the iterables</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <li class="function">sorted(<span class="method">itr</span>)</li>
+                <ul>
+                    <li class="def">organizes the content in ascending order</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="function">enumerate(<span class="method">itr</span>)</li>
+                <ul>
+                    <li class="def">defines a numeric counter to each object in an iterable, making them a tuple of position and value respectively</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="function">len(<span class="method">itr</span>)</li>
+                <ul>
+                    <li class="def">returns the iterable's lenght</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. count<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">(obj) - counts how many times an object appears in the iterable</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. index<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">(obj) - calls the object's position</li>
+                    <li class="def">(obj, n) - calls the object's position starting from the 'n' position</li>
+                </ul>
+            </ul>
+
+            <h5>Tuples</h5>
+
+            <ul>
+                <li class="function">They are immutable!</li>
+            </ul>
+
+            <ul>
+                <li class="function">tuple( )</li>
+                <ul>
+                    <li class="def">creates an empty tuple</li>
+                    <li class="def">tuple(obj) - defines a tuple in an object</li>
+                </ul>
+            </ul>
+
+            <h5>Lists</h5>
+
+            <ul>
+                <li class="function">list( )</li>
+                <ul>
+                    <li class="def">creates an empty list</li>
+                    <li class="def">list(obj) - defines a list in an object</li>
+                    <li class="def">(range(nx, ny)) - turns the range values in a list</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. append<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">adds an object into the list</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. insert<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">(n, 'obj') - adds an object into the 'n' position within the list</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. pop<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">deletes the last object in the list</li>
+                    <li class="def">(n) - deletes the object in the 'n' position in the list</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. remove<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">(obj) - deletes the mentioned object in the list</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. clear<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">clears all the content in the list</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. sort<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">sorts the list in ascending order</li>
+                    <li class="def">(<span class="method">reverse <span class="op">=</span> True</span>) - sorts the list in descending order</li>
+                </ul>
+            </ul>
+
+            <h5>Dictionaries</h5>
+
+            <ul>
+                <li class="function">dict( )</li>
+                <ul>
+                    <li class="def">creates an empty dictionary</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. keys<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">calls the object's keys</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. values<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">calls the object's values</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. items<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">calls both the object's keys and values</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="method">. copy<span class="keyword">( )</span></li>
+                <ul>
+                    <li class="def">used to copy the list's content to some object</li>
                 </ul>
             </ul>
         </section>

@@ -6,35 +6,86 @@ body {
 
 h1 {
     font-size: 50px;
-    width: 300px;
+    max-width: 300px;
     margin: 20px auto;
     text-align: center;
     color: #0247e8;
     text-shadow: #e4e401 0 2px;
 }
 
+nav {
+    width: 100px;
+    text-align: right;
+    float: right;
+    margin: 3px 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #eee;
+}
+
 main {
-    width: 450px;
+    max-width: 600px;
+    height: 500px;
     margin: 25px auto 0 auto;
     padding: 0 20px;
     color: white;
     background-color: #0247e8;
     border: solid 2px #003ecf;
     border-radius: 15px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h5 {
+    font-size: 15px;
+    margin: 0;
 }
 
 hr {
     border: #e4e401 solid 1px;
 }
 
-.command {
+/* Titles */
+.function {
     color: yellow;
 }
 
 .method {
-    color: #db00e3;
+    color: #ededed;
+}
+
+.data-type {
+    color: rgb(7, 157, 157);
+}
+
+.op {
+    color: #03d5fa;
+}
+
+.keyword {
+    color: #f836ff;
+}
+
+.structure {
+    color: #f801ae;
+}
+/* Titles */
+
+li::marker {
+    color: #04268e;
 }
 
 .def {
     color: #e28f0a;
+    list-style-type: square;
+    margin-top: 2px;
 }
