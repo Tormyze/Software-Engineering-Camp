@@ -31,7 +31,7 @@
             <ul>
                 <li class="function">del( )</li>
                 <ul>
-                    <li class="def">(any data) - deletes some object forever [var, itr, num, etc...]</li>
+                    <li class="def"><span class="function">(any data)</span> - deletes some object forever [var, itr, num, etc...]</li>
                 </ul>
             </ul>
 
@@ -65,11 +65,35 @@
             </ul>
 
             <ul>
+                <li class="function">round( )</li>
+                <ul>
+                    <li class="def"><span class="function">(n)</span> - rounds a number or more to a specified amount of decimal places</li>
+                    <li class="def"><span class="function">(n, n2)</span> - <span class="method">(optional)</span> gives the amount of decimal places</li>
+                </ul>
+            </ul>
+
+            <ul>
                 <li class="function">range(n1, nn)</li>
                 <ul>
                     <li class="def">counts from 'n1' to 'nn' sequencially (numbers)</li>
                     <li class="def"><span class="function">(n1, nn, z)</span> - 'z' defines an increment value (1 by 1, 2 by 2, ...)</li>
                     <li class="def"><span class="function">(n1, nn, -1)</span> - counts backwards</li>
+                </ul>
+            </ul>
+
+            <ul>
+                <li class="function">help( )</li>
+                <ul>
+                    <li class="def">explains any command you type</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <li class="function">def</li>
+                <ul>
+                    <li class="def">creates a function as you like</li>
+                    <li class="def"><span class="method">" " "</span> --- docstrings --- <span class="method">" " "</span> useful to explain a function</li>
+                    <li class="def"><span class="function">global</span> <span class="method">var</span> - turns a variable's value inside a function into its new value for the entire program</li>
                 </ul>
             </ul>
         </section>
@@ -104,20 +128,28 @@
                     <li class="def">returns the biggest or the smallest value from an iterable</li>
                 </ul>
             </ul>
+
+            <ul>
+                <li class="keyword"><span class="method">.</span> __doc__</li>
+                <ul>
+                    <li class="def">explains the command, quite like the <span class="function" style="opacity: 95%;"><em>help( )</em></span> function</li>
+                </ul>
+            </ul>
+
             <h5>String</h5>
 
             <ul>
                 <li class="method">. count<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">('x') - counts how many times a character appears in the <i>str</i></li>
-                    <li class="def">('x', n1, n2) - counts with slicing</li>
+                    <li class="def"><span class="method">('x')</span> - counts how many times a character appears in the <i>str</i></li>
+                    <li class="def"><span class="method">('x', n1, n2)</span> - counts with slicing</li>
                 </ul>
             </ul>
 
             <ul>
                 <li class="method">. find<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">('xyz') - indicates the position value of a segment of text</li>
+                    <li class="def"><span class="method">('xyz')</span> - indicates the position value of a segment of text</li>
                     <li class="def">returns -1 [minus one] if doesn't find anything</li>
                     <li class="def"><span class="method">. rfind</span><span class="keyword">( )</span> starts the process from the RIGHT side</li>
                 </ul>
@@ -126,7 +158,7 @@
             <ul>
                 <li class="method">[var]. replace<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">('x', 'y') - replaces 'x' <i>str</i> for 'y' <i>str</i> in [var]</li>
+                    <li class="def"><span class="method">('x', 'y')</span> - replaces 'x' <i>str</i> for 'y' <i>str</i> in [var]</li>
                 </ul>
             </ul>
 
@@ -180,7 +212,7 @@
             <ul>
                 <li class="method">'x'. join<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">(var) - puts an 'x' separator between each word and join them together again</li>
+                    <li class="def"><span class="method">(var)</span> - puts an 'x' separator between each word and join them together again</li>
                 </ul>
             </ul>
         </section>
@@ -238,7 +270,7 @@
                 <li>'a' <span class="op">in</span> 'x'</li>
                 <ul>
                     <li class="def">returns True if 'a' is in 'x'</li>
-                    <li class="def">'aBç' - can check many diferent values (doesn't need space)</li>
+                    <li class="def"><span class="method">'aBç'</span> - can check many diferent values (doesn't need space)</li>
                     <li class="def"><span class="method">'x' <span class="op">in</span> 'a'</span> - the opposite comparation can also be possible if the second element is a container with the same type as the first one</li>
                 </ul>
             </ul>
@@ -316,15 +348,15 @@
             <ul>
                 <li class="method">. count<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">(obj) - counts how many times an object appears in the iterable</li>
+                    <li class="def"><span class="method">(obj)</span> - counts how many times an object appears in the iterable</li>
                 </ul>
             </ul>
 
             <ul>
                 <li class="method">. index<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">(obj) - calls the object's position</li>
-                    <li class="def">(obj, n) - calls the object's position starting from the 'n' position</li>
+                    <li class="def"><span class="method">(obj)</span> - calls the object's position</li>
+                    <li class="def"><span class="method">(obj, n)</span> - calls the object's position starting from the 'n' position</li>
                 </ul>
             </ul>
 
@@ -338,7 +370,7 @@
                 <li class="function">tuple( )</li>
                 <ul>
                     <li class="def">creates an empty tuple</li>
-                    <li class="def">tuple(obj) - defines a tuple in an object</li>
+                    <li class="def"><span class="function">(obj)</span> - defines a tuple in an object</li>
                 </ul>
             </ul>
 
@@ -348,8 +380,8 @@
                 <li class="function">list( )</li>
                 <ul>
                     <li class="def">creates an empty list</li>
-                    <li class="def">list(obj) - defines a list in an object</li>
-                    <li class="def">(range(nx, ny)) - turns the range values in a list</li>
+                    <li class="def"><span class="function">(obj)</span> - defines a list in an object</li>
+                    <li class="def"><span class="function">(range(nx, ny))</span> - turns the range values in a list</li>
                 </ul>
             </ul>
 
@@ -363,7 +395,7 @@
             <ul>
                 <li class="method">. insert<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">(n, 'obj') - adds an object into the 'n' position within the list</li>
+                    <li class="def"><span class="method">(n, 'obj')</span> - adds an object into the 'n' position within the list</li>
                 </ul>
             </ul>
 
@@ -371,14 +403,14 @@
                 <li class="method">. pop<span class="keyword">( )</span></li>
                 <ul>
                     <li class="def">deletes the last object in the list</li>
-                    <li class="def">(n) - deletes the object in the 'n' position in the list</li>
+                    <li class="def"><span class="method">(n)</span> - deletes the object in the 'n' position in the list</li>
                 </ul>
             </ul>
 
             <ul>
                 <li class="method">. remove<span class="keyword">( )</span></li>
                 <ul>
-                    <li class="def">(obj) - deletes the mentioned object in the list</li>
+                    <li class="def"><span class="method">(obj)</span> - deletes the mentioned object in the list</li>
                 </ul>
             </ul>
 
@@ -393,7 +425,7 @@
                 <li class="method">. sort<span class="keyword">( )</span></li>
                 <ul>
                     <li class="def">sorts the list in ascending order</li>
-                    <li class="def">(<span class="method">reverse <span class="op">=</span> True</span>) - sorts the list in descending order</li>
+                    <li class="def"><span class="method">(reverse <span class="op">=</span> True)</span> - sorts the list in descending order</li>
                 </ul>
             </ul>
 

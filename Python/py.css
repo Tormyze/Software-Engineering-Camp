@@ -89,3 +89,8 @@ li::marker {
     list-style-type: square;
     margin-top: 2px;
 }
+
+.indent {
+    text-indent: 12px;
+    margin-bottom: 6px;
+}
