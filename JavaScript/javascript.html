@@ -13,26 +13,108 @@
     </header>
 
     <main>
+        <aside>&cudarrr;</aside>
+        <nav>
+            <a href="#commands">Commands</a>
+            <a href="#datatypes">Data Types</a>
+            <a href="#other">Other</a>
+        </nav>
         <section>
-            <h2 class="topic"><span class="star">☆</span> Commands</h2>
+            <article id="commands">
+                <h2 class="topic"><span class="star">☆</span> Commands</h2>
             
-            <h3 class="act func">alert(" ")</h3>
-            <p class="def">- shows an alert on the screen</p>
-            <h3 class="act func">confirm(" ")</h3>
-            <p class="def">- shows a confirm alert on the screen</p>
-            <h3 class="act func">prompt(" ")</h3>
-            <p class="def">- receives an input from the user on the screen</p>
-        </section>
-        
-        <section>
-            <h2 class="topic"><span class="star">☆</span> Data Types</h2>
-
-            <h3 class="act datatype">number</h3>
-            <p class="def">- englobes all number types</p>
-            <h3 class="act datatype">string</h3>
-            <p class="def">- englobes texts and literal values</p>
-            <h3 class="act datatype">boolean</h3>
-            <p class="def">- has only True or False</p>
+                <div class="pair">
+                    <h3 class="act func">alert(" ")</h3>
+                    <p class="def">- shows an alert on the screen</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act func">confirm(" ")</h3>
+                    <p class="def">- shows a confirm alert on the screen</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act func">prompt(" ")</h3>
+                    <p class="def">- receives an input from the user on the screen</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act func">typeof <span class="var">var</span></h3>
+                    <p class="def">- shows the element's type</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act func">parse</h3>
+                    <p class="def">- converts an element into another type</p>
+                    <div class="sub-acts">
+                        <h4 class="sub">parseInt(<span class="var">var</span>)</h4>
+                        <p class="def">turns it into an Integer</p>
+                        <h4 class="sub">parseFloat(<span class="var">var</span>)</h4>
+                        <p class="def">turns it into a Float</p>
+                        <h4 class="sub"><span class="var">var</span>.toString( )</h4>
+                        <p class="def">turns it into a String</p>
+                    </div>
+                </div>
+                <div class="pair">
+                    <h3 class="act func"><span class="var">var</span>.length</h3>
+                    <p class="def">- shows the element's length</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act func"><span class="var">var</span>.toUpperCase( )</h3>
+                    <p class="def">- turns a string into UPPERCASE</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act func"><span class="var">var</span>.toLowerCase( )</h3>
+                    <p class="def">- turns a string into lowercase</p>
+                </div>
+            </article>
+            
+            <article id="datatypes">
+                <h2 class="topic"><span class="star">☆</span> Data Types</h2>
+                <div class="pair">
+                    <h3 class="act datatype">Number(<span class="var">var</span>)</h3>
+                    <p class="def">- englobes all numeric values</p>
+                    <div class="sub-acts">
+                        <h4 class="sub">infinity</h4>
+                        <p class="def">all infinity values</p>
+                        <h4 class="sub">NaN</h4>
+                        <p class="def">Not a Number</p>
+                    </div>
+                </div>
+                <div class="pair">
+                    <h3 class="act datatype">String(<span class="var">var</span>)</h3>
+                    <p class="def">- englobes texts and literal values</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act datatype">boolean</h3>
+                    <p class="def">- has only True or False</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act datatype">function</h3>
+                    <p class="def">- defines a function</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act datatype">object</h3>
+                    <p class="def">- if it isn't any of the other data types, it is an object</p>
+                    <div class="sub-acts">
+                        <h4 class="sub">array</h4>
+                        <p class="def">a vector in JavaScript</p>
+                    </div>
+                </div>
+                <div class="pair">
+                    <h3 class="act datatype">null</h3>
+                    <p class="def">- has a null value</p>
+                </div>
+                <div class="pair">
+                    <h3 class="act datatype">undefined</h3>
+                    <p class="def">- has undefined value</p>
+                </div>
+            </article>
+            
+            <article id="other">
+                <h2 class="topic"><span class="star">☆</span> Other</h2>
+            
+                <div class="pair">
+                    <h3 class="act other">`<span style="color: white; font-style: normal; margin: 0 5px;">Lorem ipsum</span>${<span class="var">var</span>}`</h3>
+                    <p class="def">- template string</p>
+                </div>
+            </article>
         </section>
     </main>
 
