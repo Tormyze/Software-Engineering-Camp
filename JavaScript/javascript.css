@@ -69,7 +69,7 @@ nav {
     box-shadow: 4px 4px 1px #00000066;
 }
 
-nav a {
+nav a, #to-top {
     color: #fff;
     width: 70px;
     font: 600 12px 'Jost', sans-serif;
@@ -78,7 +78,7 @@ nav a {
     text-shadow: 0px 1.5px 0px #00000066;
 }
 
-nav a:hover {text-decoration: underline;}
+nav a:hover, #to-top:hover {text-decoration: underline;}
 
 section {
     width: 70%;
@@ -93,6 +93,7 @@ section {
     margin: auto;
     margin-bottom: 50px;
     padding: 30px;
+    padding-bottom: 6px;
 }
 
 article {
@@ -192,6 +193,10 @@ article {
 
 .sub-acts .def:hover {font-size: 0.85rem;}
 
+#to-top {
+    width: 100%;
+    margin: auto;
+}
 /* Topics */
 
 footer {
@@ -205,7 +210,7 @@ footer {
     box-shadow: 0px -1px 10px #0000006c;
 }
 
-.foot {padding: 8px;}
+.foot {padding: 10px;}
 
 .credit {
     font-size: 10px;
@@ -215,3 +220,22 @@ footer {
 }
 
 .credit:hover {text-decoration: underline;}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 20px;
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+    filter: invert(65%);
+}
+
+.social img:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
