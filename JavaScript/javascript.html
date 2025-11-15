@@ -16,7 +16,9 @@
         <aside>&cudarrr;</aside>
         <nav>
             <a href="#commands">Commands</a>
+            <a href="#methods">Methods</a>
             <a href="#datatypes">Data Types</a>
+            <a href="#operators">Operators</a>
             <a href="#other">Other</a>
         </nav>
         <section>
@@ -27,21 +29,26 @@
                     <h3 class="act func">alert(" ")</h3>
                     <p class="def">- shows an alert on the screen</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act func">confirm(" ")</h3>
                     <p class="def">- shows a confirm alert on the screen</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act func">prompt(" ")</h3>
                     <p class="def">- receives an input from the user on the screen</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act func">typeof <span class="var">var</span></h3>
                     <p class="def">- shows the element's type</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act func">parse</h3>
                     <p class="def">- converts an element into another type</p>
+
                     <div class="sub-acts">
                         <h4 class="sub">parseInt(<span class="var">var</span>)</h4>
                         <p class="def">turns it into an Integer</p>
@@ -51,25 +58,57 @@
                         <p class="def">turns it into a String</p>
                     </div>
                 </div>
+
                 <div class="pair">
-                    <h3 class="act func"><span class="var">var</span>.length</h3>
+                    <h3 class="act func">write(" ")</h3>
+                    <p class="def">- inserts a string in the document</p>
+                </div>
+            </article>
+
+            <article id="methods">
+                <h2 class="topic"><span class="star">☆</span> Methods</h2>
+
+                <div class="pair">
+                    <h3 class="act meth"><span class="var">var</span>.length</h3>
                     <p class="def">- shows the element's length</p>
                 </div>
+
                 <div class="pair">
-                    <h3 class="act func"><span class="var">var</span>.toUpperCase( )</h3>
+                    <h3 class="act meth"><span class="var">var</span>.replace("<span class="var">x</span>", "<span class="var">y</span>")</h3>
+                    <p class="def">- replaces "x" to "y"</p>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act meth"><span class="var">var</span>.toUpperCase( )</h3>
                     <p class="def">- turns a string into UPPERCASE</p>
                 </div>
+
                 <div class="pair">
-                    <h3 class="act func"><span class="var">var</span>.toLowerCase( )</h3>
+                    <h3 class="act meth"><span class="var">var</span>.toLowerCase( )</h3>
                     <p class="def">- turns a string into lowercase</p>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act meth"><span class="var">num</span>.toFixed(<span class="var">n</span>)</h3>
+                    <p class="def">- formats the number to a specified number of decimal places</p>
                 </div>
             </article>
             
             <article id="datatypes">
                 <h2 class="topic"><span class="star">☆</span> Data Types</h2>
+
+                <div class="pair">
+                    <h3 class="act datatype">String(<span class="var">var</span>)</h3>
+                    <p class="def">- englobes texts and literal values</p>
+                    <p class="def">- converts an element into a String</p>
+                </div>
+                
+
                 <div class="pair">
                     <h3 class="act datatype">Number(<span class="var">var</span>)</h3>
                     <p class="def">- englobes all numeric values</p>
+                    <p class="def">- converts an element into a Number</p>
+
                     <div class="sub-acts">
                         <h4 class="sub">infinity</h4>
                         <p class="def">all infinity values</p>
@@ -77,42 +116,167 @@
                         <p class="def">Not a Number</p>
                     </div>
                 </div>
-                <div class="pair">
-                    <h3 class="act datatype">String(<span class="var">var</span>)</h3>
-                    <p class="def">- englobes texts and literal values</p>
-                </div>
+                
                 <div class="pair">
                     <h3 class="act datatype">boolean</h3>
                     <p class="def">- has only True or False</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act datatype">function</h3>
                     <p class="def">- defines a function</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act datatype">object</h3>
                     <p class="def">- if it isn't any of the other data types, it is an object</p>
+
                     <div class="sub-acts">
                         <h4 class="sub">array</h4>
                         <p class="def">a vector in JavaScript</p>
                     </div>
                 </div>
+
                 <div class="pair">
                     <h3 class="act datatype">null</h3>
                     <p class="def">- has a null value</p>
                 </div>
+
                 <div class="pair">
                     <h3 class="act datatype">undefined</h3>
                     <p class="def">- has undefined value</p>
+                </div>
+            </article>
+
+            <article id="operators">
+                <h2 class="topic"><span class="star">☆</span> Operators</h2>
+
+                <div class="pair">
+                    <h3 class="act op">Arithmetic</h2>
+
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> + <span class="var">y</span></h3>
+                        <p class="def">- sums and concatenates</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> - <span class="var">y</span></h3>
+                        <p class="def">- subtracts</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> * <span class="var">y</span></h3>
+                        <p class="def">- multiplies</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> / <span class="var">y</span></h3>
+                        <p class="def">- divides</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> % <span class="var">y</span></h3>
+                        <p class="def">- gets the module (rest of a division)</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> ** <span class="var">y</span></h3>
+                        <p class="def">- makes an exponenciation</p>
+                    </div>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act op">Relational</h2>
+
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> == <span class="var">y</span></h3>
+                        <p class="def">- validates if both are equal</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> != <span class="var">y</span></h3>
+                        <p class="def">- validates if both are different</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> > <span class="var">y</span></h3>
+                        <p class="def">- validates if "x" is higher than "y"</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> >= <span class="var">y</span></h3>
+                        <p class="def">- validates if "x" is higher or equal to "y"</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> < <span class="var">y</span></h3>
+                        <p class="def">- validates if "x" is lower than "y"</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> <= <span class="var">y</span></h3>
+                        <p class="def">- validates if "x" is lower or equal to "y"</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> === <span class="var">y</span></h3>
+                        <p class="def">- validates if both are identical (same values and type)</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">x</span> !== <span class="var">y</span></h3>
+                        <p class="def">- validates if both are not identical (different values and type)</p>
+                    </div>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act op">Logical</h3>
+
+                    <div class="sub-acts">
+                        <h4 class="sub">!<span class="var">bool</span></h4>
+                        <p class="def">- negation</p>
+                        <p class="def">- returns the opposite boolean value</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">test</span> && <span class="var">test</span></h4>
+                        <p class="def">- conjunction</p>
+                        <p class="def">- returns True if both are True</p>
+                    </div>
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">test</span> || <span class="var">test</span></h4>
+                        <p class="def">- disjunction</p>
+                        <p class="def">- returns True if at least one of both is True</p>
+                    </div>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act op">Ternary</h3>
+
+                    <div class="sub-acts">
+                        <h4 class="sub"><span class="var">test</span> ? <span class="var">[...]</span> : <span class="var">[...]</span></h4>
+                        <p class="def">- executes the True or the False path depending on the test's result</p>
+                        <p class="def">[...]<span class="sub" style="font-size: inherit;">:</span> it's the True path</p>
+                        <p class="def"><span class="sub" style="font-size: inherit;">:</span>[...] it's the False path</p>
+                    </div>
                 </div>
             </article>
             
             <article id="other">
                 <h2 class="topic"><span class="star">☆</span> Other</h2>
             
+                <div class="pair hierarchy">
+                    <h3 class="hie act">window</h3>
+                    <div class="hie-row">
+                        <h3 class="hie act">[...]</h3>
+                        <h3 class="hie act">location</h3>
+                        <h3 class="hie act">document</h3>
+                        <h3 class="hie act">history</h3>
+                        <h3 class="hie act">[...]</h3>
+                    </div>
+                    <div class="hie-row">
+                        <h3 class="hie act">html</h3>
+                    </div>
+                    <div class="hie-row">
+                        <h3 class="hie act">head</h3>
+                        <h3 class="hie act">body</h3>
+                    </div>
+                    <div class="hie-row">
+                        <h3 class="hie act">[...]</h3>
+                    </div>
+                </div>
+
                 <div class="pair">
                     <h3 class="act other">`<span style="color: white; font-style: normal; margin: 0 5px;">Lorem ipsum</span>${<span class="var">var</span>}`</h3>
                     <p class="def">- template string</p>
+                    <p class="def">- it's possible to write HTML tags inside the string itself</p>
                 </div>
             </article>
             <a href="#welcome" id="to-top">to Top</a>
@@ -123,19 +287,20 @@
         <p class="foot">&copy; Tormyze</p>
 
         <ul class="social">
-            <a href="https://github.com/Tormyze"><img src="img/logo-github.svg" alt="Logo GitHub" id="github"></img></a>
-            <a href="https://www.instagram.com/tormyze"><img src="img/logo-instagram.svg" alt="Logo Instagram" id="instagram"></img></a>
-            <a href="https://www.youtube.com/@tormyze"><img src="img/logo-youtube.svg" alt="Logo YouTube" id="youtube"></img></a>
-            <a href="www.linkedin.com/in/paulojr-tormyze"><img src="img/logo-linkedin.svg" alt="Logo LinkedIn" id="linkedin"></img></a>
+            <a href="https://github.com/Tormyze" target="_blank"><img src="img/logo-github.svg" alt="Logo GitHub" id="github"></img></a>
+            <a href="https://www.instagram.com/tormyze" target="_blank"><img src="img/logo-instagram.svg" alt="Logo Instagram" id="instagram"></img></a>
+            <a href="https://www.youtube.com/@tormyze" target="_blank"><img src="img/logo-youtube.svg" alt="Logo YouTube" id="youtube"></img></a>
+            <a href="https://www.linkedin.com/in/paulojr-tormyze" target="_blank"><img src="img/logo-linkedin.svg" alt="Logo LinkedIn" id="linkedin"></img></a>
         </ul>
 
         <a class="credit" href="https://www.flaticon.com/br/icones-gratis/javascript" title="javascript ícones">Javascript favicon criado por Freepik - Flaticon</a>
     </footer>
 
     <script>
-        window.alert('Alrigth, then.')
+        window.alert('Alright, then.')
         window.confirm('Are you ready?')
-        window.prompt("Let's freaking go.")
+        var nome = window.prompt("Your name is?")
+        alert(`Let's go, ${nome}!!!`)
     </script>
 </body>
 </html>

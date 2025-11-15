@@ -7,12 +7,14 @@
     scrollbar-width: none;
     box-sizing: border-box;
     
-    --main: #dc8f00;
-    --funcao: #ffff00;
+    --main: #dc8f00; /* or #c47f00 */
+    --func: #ffff00;
     --datatype: #8400ff;
+    --op: #ff0000;
     --other: #cb2525;
 
-    --sub-act: #00f7ff;
+    --obj-model: #00f7ff;
+    --sub-act: #c8ff00;
     --star: #3aff1c;
 }
 
@@ -118,6 +120,12 @@ article {
 }
 
 /* Topics */
+.var {
+    color: #fff;
+    font-size: 90%;
+    padding: 0 2px;
+}
+
 .topic {
     color: #ffffff;
     font: 600 30px 'Jost', sans-serif;
@@ -132,13 +140,9 @@ article {
     filter: brightness(120%);
 }
 
-.pair {margin-bottom: 4px;}
+.pair {margin-bottom: 7px;}
 
-.var {
-    color: #fff;
-    font-size: 90%;
-    padding: 0 2px;
-}
+.pair h3 {margin-bottom: 2px;}
 
 .act, .sub {
     font: italic 600 18px 'Jost', sans-serif;
@@ -167,10 +171,41 @@ article {
 .sub:hover {font-size: 1.05rem;}
 
     /* Acts */
-.func {color: var(--funcao);}
+.func, .meth {color: var(--func);}
 
 .datatype {color: var(--datatype);}
 
+.op {color: var(--op);}
+
+        /* Hierarchy */
+.hierarchy {
+    color: var(--obj-model);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0 30px;
+}
+
+.hierarchy .hie {
+    background: #0397c0;
+    border: #005f81 2px dashed;
+    box-shadow: 0 3px #005f81b1;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.hierarchy .hie:hover {
+    filter: brightness(110%);
+}
+
+.hie-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+        /* Hierarchy */
+        
 .other {color: var(--other);}
     /* Acts */
 
@@ -178,7 +213,7 @@ article {
     color: #ffffff;
     font: italic 400 14px 'Jost', sans-serif;
     text-shadow: 1px 1.5px #000000a6;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
     text-indent: 2.2rem;
     transition: .2s ease-in-out;
 }
