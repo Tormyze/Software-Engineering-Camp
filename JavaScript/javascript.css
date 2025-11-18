@@ -11,6 +11,8 @@
     --func: #ffff00;
     --datatype: #8400ff;
     --op: #ff0000;
+    --event: #3aff1c;
+    --tag: #00eeff;
     --other: #cb2525;
 
     --obj-model: #00f7ff;
@@ -56,10 +58,13 @@ aside {
     box-shadow: 2px 2px 1px #00000066;
 }
 
-aside:hover {cursor: pointer;}
+aside:hover {
+    cursor: pointer;
+    background-color: #cd7408;
+}
 
 nav {
-    display: flex;
+    display: none; /* flex */
     justify-content: space-around;
     align-items: center;
     height: 28px;
@@ -69,11 +74,11 @@ nav {
     border-bottom: none;
     border-radius: 6px 6px 0 0;
     box-shadow: 4px 4px 1px #00000066;
+
 }
 
 nav a, #to-top {
     color: #fff;
-    width: 70px;
     font: 600 12px 'Jost', sans-serif;
     text-align: center;
     text-decoration: none;
@@ -144,6 +149,12 @@ article {
 
 .pair h3 {margin-bottom: 2px;}
 
+.hr {
+    border-bottom: #0000003a 2px solid;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
 .act, .sub {
     font: italic 600 18px 'Jost', sans-serif;
     text-shadow: 1px 1px 0px #000000c0;
@@ -170,12 +181,17 @@ article {
 
 .sub:hover {font-size: 1.05rem;}
 
+
     /* Acts */
 .func, .meth {color: var(--func);}
 
 .datatype {color: var(--datatype);}
 
 .op {color: var(--op);}
+
+.event {color: var(--event);}
+
+.tag {color: var(--tag);}
 
         /* Hierarchy */
 .hierarchy {
@@ -205,7 +221,7 @@ article {
     gap: 10px;
 }
         /* Hierarchy */
-        
+
 .other {color: var(--other);}
     /* Acts */
 

@@ -13,12 +13,13 @@
     </header>
 
     <main>
-        <aside>&cudarrr;</aside>
+        <aside>&blacktriangle;</aside>
         <nav>
             <a href="#commands">Commands</a>
             <a href="#methods">Methods</a>
             <a href="#datatypes">Data Types</a>
             <a href="#operators">Operators</a>
+            <a href="#events">Events</a>
             <a href="#other">Other</a>
         </nav>
         <section>
@@ -92,6 +93,28 @@
                     <h3 class="act meth"><span class="var">num</span>.toFixed(<span class="var">n</span>)</h3>
                     <p class="def">- formats the number to a specified number of decimal places</p>
                 </div>
+
+                <div class="pair">
+                    <h3 class="act meth"><span class="var">var</span>.get</h3>
+                    <p class="def">- calls an element (or more) by some property</p>
+                    <div class="sub-acts">
+                        <h4 class="sub">.getElementsByTagName("<span class="var">tag</span>")<span class="var">[int]</span></h4>
+                        <p class="def">- calls by an HTML tag</p>
+                        <p class="def">- brackets choose the element</p>
+                        <h4 class="sub">.getElementsByName("<span class="var">name</span>")<span class="var">[int]</span></h4>
+                        <p class="def">- calls by name</p>
+                        <p class="def">- brackets choose the element</p>
+                        <h4 class="sub">.getElementsByClassName("<span class="var">class</span>")<span class="var">[int]</h4>
+                        <p class="def">- calls by class</p>
+                        <p class="def">- brackets choose the element</p>
+                        <h4 class="sub">.getElementById("<span class="var">id</span>")</h4>
+                        <p class="def">- calls by id</p>
+                        <h4 class="sub">.querySelector("<span class="var">element</span>")</h4>
+                        <p class="def">- calls by the element itself</p>
+                        <p class="def">- <span class="sub" style="font-size: inherit;">("<span class="var">element</span>.<span class="var">class</span>")</span> calls with a class</p>
+                        <p class="def">- <span class="sub" style="font-size: inherit;">("<span class="var">element</span>#<span class="var">id</span>")</span> calls with an id</p>
+                    </div>
+                </div>
             </article>
             
             <article id="datatypes">
@@ -120,11 +143,6 @@
                 <div class="pair">
                     <h3 class="act datatype">boolean</h3>
                     <p class="def">- has only True or False</p>
-                </div>
-
-                <div class="pair">
-                    <h3 class="act datatype">function</h3>
-                    <p class="def">- defines a function</p>
                 </div>
 
                 <div class="pair">
@@ -248,6 +266,66 @@
                     </div>
                 </div>
             </article>
+
+            <article id="events">
+                <h2 class="topic"><span class="star">☆</span> Events</h2>
+
+                <div class="pair hr">
+                    <h3 class="act datatype">function <span class="var">func</span>(<span class="var">param</span>) { }</h3>
+                    <p class="def">- defines a function</p>
+                    <p class="def">- can have parameters or not</p>
+                </div>
+
+                <div class="pair hr">
+                    <h3 class="act event"><span class="var">var</span>.addEventListener("<span class="var">event</span>", <span class="var">func</span>)</h3>
+                    <p class="def">- will detect any event</p>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act event">Mouse</h3>
+
+                    <div class="sub-acts">
+                        <h4 class="sub">click</h4>
+                        <p class="def">- detects when an element is clicked</p>
+                        <p class="def"><span class="sub tag" style="font-size: inherit;">onclick="<span class="var">func</span><span class="datatype">()</span>"</span> - HTML property</p>
+
+                        <h4 class="sub">mouseenter</h4>
+                        <p class="def">- detects when the pointer enters an element</p>
+                        <p class="def"><span class="sub tag" style="font-size: inherit;">onmouseenter="<span class="var">func</span><span class="datatype">()</span>"</span> - HTML property</p>
+
+                        
+                        <h4 class="sub">mousemove</h4>
+                        <p class="def">- detects when the pointer moves along the element</p>
+                        
+                        <h4 class="sub">mousedown</h4>
+                        <p class="def">- detects when it's clicked and held</p>
+                        
+                        <h4 class="sub">mouseup</h4>
+                        <p class="def">- detects when it's released</p>
+                        
+                        <h4 class="sub">mouseout</h4>
+                        <p class="def">- detects when the pointer gets out from the element</p>
+                        <p class="def"><span class="sub tag" style="font-size: inherit;">onmouseout="<span class="var">func</span><span class="datatype">()</span>"</span> - HTML property</p>
+
+                    </div>
+                </div>
+
+                <div class="pair">
+                    <h3 class="act var">Variables Interactions</h2>
+                    <p class="def">- there're many properties you can manipulate</p>
+
+                    <div class="sub-acts">
+                        <h4 class="sub tag"><span class="var">var</span>.innerHTML</h4>
+                        <p class="def">- gets var's HTML properties</p>
+
+                        <h4 class="sub tag"><span class="var">var</span>.innerText</h4>
+                        <p class="def">- gets var's text</p>
+
+                        <h4 class="sub tag"><span class="var">var</span>.value</h4>
+                        <p class="def">- gets the var's value</p>
+                    </div>
+                </div>
+            </article>
             
             <article id="other">
                 <h2 class="topic"><span class="star">☆</span> Other</h2>
@@ -301,6 +379,23 @@
         window.confirm('Are you ready?')
         var nome = window.prompt("Your name is?")
         alert(`Let's go, ${nome}!!!`)
+
+        var aside = document.querySelector('aside')
+        var nav = document.querySelector('nav')
+        aside.addEventListener('click', expand)
+
+        var expanded = false
+        function expand(a){
+            if (!expanded){
+                aside.innerHTML = '&blacktriangledown;'
+                nav.style.display = 'flex'
+                expanded = true
+            } else {
+                aside.innerHTML = '&blacktriangle;'
+                nav.style.display = 'none'
+                expanded = false
+            }
+        }
     </script>
 </body>
 </html>
